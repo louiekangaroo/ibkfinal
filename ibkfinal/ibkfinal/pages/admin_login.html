@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Itty Bitty Kids Expo Brisbane Australia">
+    <meta name="author" content="Aviso.Manalastas.Llagas.Pablo">
+    <title>Login | Itty Bitty Kids Expo</title>
+
+    <!--CSS-->
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/jquery-ui.min.css" rel="stylesheet">
+    <link href="../css/admin_login.css" rel="stylesheet">
+
+
+
+    <!--Javascript-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+
+
+</head>
+<body>
+    <!--ITTY BITTY LOGO-->
+    <div id="logo">
+        <a href="">
+            <img src="../images/ibklogo.png" />
+        </a>
+    </div>
+    <div class="container">
+        <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Sign In as Itty Bitty Administrator</div>
+                </div>
+
+                <div style="padding-top:20px" class="panel-body">
+
+                    <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email" required>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password" required>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group" style="margin-top: 10px">
+                        <div class="col-sm-12">
+                            <button id="btn-login" name="btn-log" class="btn btn-primary">Login</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $('#btn-login').click(function () {
+            var username = document.getElementById('login-username');
+            var password = document.getElementById('login-password');
+
+            if (!username.value == "" && !password.value == "") {
+                if (username.value == "edd" && password.value == "edd") {
+                    sessionStorage.setItem("isSuccessLogin", "true");
+                    location.href = "admin_main.php";
+                } else {
+                    alert('Invalid Username or Password');
+                    location.reload();
+                }
+            } else {
+                alert('Please fill both Username and Password');
+            }
+
+
+
+        });
+    </script>
+</body>
+</html>

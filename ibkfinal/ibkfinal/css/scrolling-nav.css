@@ -1,0 +1,93 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+
+
+/***********************
+********* Footer ******
+************************/
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  background: #2e2e2e;
+  font-size: .9em;
+}
+#footer a {
+  color: #fff;
+}
+#footer a:hover {
+  color: #45aed6;
+}
+
+
+#footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 7.5px;
+}
+
+#footer ul > li {
+    display: inline-block;
+    margin: 0 7.5px;
+}
+
+#back-to-top {
+    height: 100px;
+    width: 110px;
+    margin: 0 auto;
+    position:relative;
+    top: -100px;
+    margin-bottom: -100px;
+}
+
+#back-to-top img {
+     height: 100px;
+    width: 110px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #footer .social-icons {
+        float: right;   
+    }
+}
+
+
+.section-title {
+    font-weight: bold;
+    color: #272727;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 20px;
+}
+

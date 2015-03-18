@@ -1,0 +1,28 @@
+.navbar-default {
+    background-color: rgba(46, 46, 46, 0.5);
+    border-bottom: 1px solid #000;
+    
+}
+
+    .navbar-default .navbar-nav > li > a {
+        color: #fff;
+    }
+
+       
+
+        .navbar-default .navbar-nav > li > a:focus {
+            color: #fff;
+        }
+
+    .navbar-default .navbar-brand {
+        color: #b1b1b1;
+    }
+
+        .navbar-default .navbar-brand:hover {
+            
+            color: #fff;
+        }
+
+        .navbar-default .navbar-brand:focus {
+            color: #b1b1b1;
+        }

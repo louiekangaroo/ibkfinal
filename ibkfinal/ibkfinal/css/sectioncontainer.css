@@ -1,0 +1,72 @@
+.divContainer {
+    margin: 0 auto;
+    width: 70%;
+}
+
+    .divContainer h1 {
+        margin-bottom: 25px;
+    }
+
+.column-title {
+    font-weight: bold;
+    margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 1px;
+    position: relative;
+    text-align: left;
+}
+
+    .column-title:after {
+        content: " ";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 50%;
+        border-bottom: 2px solid #565656;
+    }
+
+.column-div {
+    margin-top: 15px;
+    background-color: rgba(235,235,235, .8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px;
+}
+
+    .column-div p {
+        text-align: left;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.form-group label {
+    margin-bottom: -5px;
+}
+
+/*DESIGN FOR MOBILE VIEW*/
+@media screen and (max-width: 414px) and (max-height: 736px) {
+    .divContainer {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .column-div p {
+        text-align: left;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    h1 {
+        font-size: 23px;
+        font-weight: bold;
+    }
+}

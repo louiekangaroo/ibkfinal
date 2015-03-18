@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: url("../images/index cloud/ibkbackground.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*DESIGN FOR WEB VIEW*/
+
+#cloud-menu {
+    display: inline;
+}
+
+    #cloud-menu div {
+        display: table-cell;
+    }
+
+#sun a img {
+    height: 300px;
+    margin-top: -150px;
+    margin-left: 20px;
+}
+
+#cloud-about a img {
+    position: relative;
+    display: inline;
+    height: 200px;
+    margin-top: -80px;
+    margin-left: -30px;
+}
+
+#cloud-getinvolved a img {
+    position: relative;
+    display: inline;
+    height: 200px;
+    margin-top: -60px;
+    margin-left: -10px;
+}
+
+#cloud-eventinfo a img {
+    position: relative;
+    display: inline;
+    height: 200px;
+    margin-top: -70px;
+    margin-left: -10px;
+}
+
+#logo a img {
+    position: relative;
+    display: inline;
+    height: 220px;
+    top: 0px;
+    left: 50px;
+}
+
+#cloud-competitions a img {
+    position: relative;
+    display: inline;
+    height: 200px;
+    margin-top: -70px;
+    margin-left: 150px;
+}
+
+#cloud-news a img {
+    position: relative;
+    display: inline;
+    height: 200px;
+    margin-top: -70px;
+}
+
+#cloud-contactus a img {
+    position: relative;
+    display: inline;
+    height: 200px;
+    margin-top: -70px;
+}
+
+
+/*DESIGN FOR MOBILE VIEW*/
+
+#cloud-menu-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) {
+    body {
+        background: url("../images/page background/index_background.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #cloud-menu-mobile {
+        display: inline;
+    }
+
+        #cloud-menu-mobile div {
+            display: table-cell;
+        }
+
+    #cloud-menu {
+        display: none;
+    }
+
+    #sun-mobile img {
+        height: 300px;
+        margin-top: -150px;
+        margin-left: -10px;
+    }
+
+    #logo-mobile img {
+        display: inline;
+        margin: 0 auto;
+        height: 150px;
+        margin-top: 80px;
+        margin-left: -20px;
+    }
+
+    ul li img {
+        display: table;
+        position: relative;
+        height: 200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #cloud-menu-mobile select {
+        display: table;
+        margin: 0 auto;
+        margin-top: -70px;
+    }
+}

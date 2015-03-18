@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: url("../images/index cloud/ibkbackground.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*DESIGN FOR WEB VIEW*/
+
+
+#logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+#logo a img {
+    position: relative;
+    display: inline;
+    height: 220px;
+    top: 20px;   
+}
+
+#loginbox {
+    margin-top: 50px;
+}
+
+
