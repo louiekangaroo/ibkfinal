@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -24,7 +24,7 @@
     <script src="../js/jquery.easing.min.js"></script>
     <script src="../js/scrolling-nav.js"></script>
     <script src="../js/jquery.slides.min.js"></script>
-    
+  <script src="../js/getadminmain.js"></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -76,8 +76,19 @@
             <div class="row">
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h4 class="column-title"></h4>
-                    <div class="column-div">
-                        <p>No available content at this time.</p>
+                    <div id = "logs" class="column-div">
+    <table id =logs border="1">
+           <thead>
+     <tr>
+      <th>Company Name</th>
+      <th>Full Name</th>
+      <th>Email Address</th>
+      <th>Registration Type</th>
+      <th>Date</th>
+         </thead>
+  <tbody class="list">
+         </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -88,13 +99,52 @@
     <!-- NEWSLETTER-->
     <section id="newsletter" class="newsletter-section">
         <div class="container divContainer">
-            <h1>NEWSLETTER</h1>
+            <h1>MANAGE NEWS</h1>
 
             <div class="row">
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h4 class="column-title"></h4>
                     <div class="column-div">
-                        <p>No available content at this time.</p>
+                       <form class="form-horizontal" id="reg-form" method = "post" action ="process_newsletter.php" enctype='multipart/form-data'>
+                            <fieldset>
+
+                                <!-- TITLE -->
+                                <legend></legend>
+
+                              
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="txtTitle">Title</label>
+                                    <div class="col-md-4">
+                                        <input id="newshead" name="newshead" type="text" class="form-control input-md" required>
+                                                                  
+                                    </div>
+                                </div>
+
+                
+                                <!-- NEWS BODY-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="txtMessage">News</label>
+                                    <div class="col-md-4">
+                                        <textarea class="form-control" id="newsbody" name="newsbody" style="height: 200px"></textarea>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="fileselect">News Image</label>
+                                    <div class="col-md-4">                                  
+	                               <input type="file" id="fileselect" name="fileselect" />
+                                    </div>
+                                    
+                                </div>
+                                <!-- SUBMIT BUTTON -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="btnSubmit"></label>
+                                    <div class="col-md-4">
+                                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary" onclick="alert('News update saved.');">Submit</button>                            
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
                 </div>
             </div>

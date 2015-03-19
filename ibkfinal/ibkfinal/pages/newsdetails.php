@@ -7,7 +7,7 @@ if (!$con) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT id, News, News_Body, News_Image, Date_Created, Status FROM News_Info limit 0, 2";
+$sql = "SELECT id, News, News_Body, News_Image, Date_Created, Status FROM News_Info limit 0, 5";
 $result = mysqli_query($con, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -26,12 +26,12 @@ if (mysqli_num_rows($result) > 0) {
                     <div>
                         <h2 class=\"news-header\"> ". $row["News"]. "</h2>
                         <p class=\"news-body\">" . $post . "..</p>
-                        <p><a href=\"#". $row["id"]. "\" class=\"btn btn-success\">Read More</a></p>
+                        <p><a href=\"#modal". $row["id"]. "\" class=\"btn btn-success\">Read More</a></p>
                     </div>
                 </div>
                 <div class = \"clear\"></div>
                 <style>
-#". $row["id"]. " {
+#modal". $row["id"]. " {
 	left:50%;
 	margin:-100px 0 0 -40%;
 	opacity: 0;
@@ -46,27 +46,27 @@ if (mysqli_num_rows($result) > 0) {
 	-webkit-transition: all 0.4s ease-in-out;
     padding-top: 60px;
 }
-	#". $row["id"]. ":target {
+	#modal". $row["id"]. ":target {
 		opacity: 1;
 		top:50%;
 		visibility: visible;
 	}
-#". $row["id"]. " .header,#". $row["id"]. " .footer {
+#modal". $row["id"]. " .header,#modal". $row["id"]. " .footer {
 	border-bottom: 1px solid #e7e7e7;
 	border-radius: 5px 5px 0 0;
 }
-	#". $row["id"]. " .footer {
+	#modal". $row["id"]. " .footer {
 		border:none;
 		border-top: 1px solid #e7e7e7;
 		border-radius: 0 0 5px 5px;
 	}
-#". $row["id"]. " h2 {
+#modal". $row["id"]. " h2 {
 	margin:0;
 }
-#". $row["id"]. " .btn {
+#modal". $row["id"]. " .btn {
 	float:right;
 }
-#". $row["id"]. " .copy,#". $row["id"]. " .header, #". $row["id"]. " .footer {
+#modal". $row["id"]. " .copy,#modal". $row["id"]. " .header, #modal". $row["id"]. " .footer {
 	padding:15px;
 }
 .modal-content {
@@ -75,11 +75,11 @@ if (mysqli_num_rows($result) > 0) {
 	z-index: 20;
 	border-radius:5px;
 }
-#". $row["id"]. " .copy {
+#modal". $row["id"]. " .copy {
 	background: #fff;
 }
 
-#". $row["id"]. " .overlay {
+#modal". $row["id"]. " .overlay {
 	background-color: #000;
 	background: rgba(0,0,0,.5);
 	height: 100%;
@@ -93,7 +93,7 @@ if (mysqli_num_rows($result) > 0) {
                 
                 
                 
-                <div id=\"". $row["id"]. "\">
+                <div id=\"modal". $row["id"]. "\">
                     <div class=\"modal-content\">
                         <div class=\"header\">
                             <h2 class=\"news-header2\">". $row["News"]. "</h2>
@@ -101,7 +101,7 @@ if (mysqli_num_rows($result) > 0) {
                         <div class=\"copy\">
                             <div class = \"news-image\">
                             
-                            <div class = \"news-image\">" . '<img src="data:image/jpeg;base64,'. base64_encode($row['News_Image']). '"  width="300" height="300" class=\"img-responsive\"  alt=\"image\">' . "</div>
+                            <div class = \"news-image\">" . '<img src="data:image/jpeg;base64,'. base64_encode($row['News_Image']). '"  width="300" height="300" class="img-responsive"  alt="image">' . "</div>
                             </div>                        
                         <p class=\"news-body\">" . $row["News_Body"]. "</p>
                             <div class = \"clear\"></div>
