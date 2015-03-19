@@ -1,8 +1,8 @@
 <?php
 
-$host="localhost"; //hostname
-$username="root";//username
-$password="Admin@001"; //database password
+$host="192.168.0.111"; //hostname
+$username="nate";//username
+$password="akosinathan"; //database password
 $db_name="ittybitty";//database name
 
 //connect to database
