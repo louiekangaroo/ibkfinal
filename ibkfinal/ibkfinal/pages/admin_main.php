@@ -77,8 +77,8 @@
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h4 class="column-title"></h4>
                     <div id = "logs" class="column-div">
-    <table id =logs border="1">
-          
+                            <table id =logs border="2">
+                            </table>
                     </div>
                 </div>
             </div>
@@ -151,11 +151,38 @@
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h4 class="column-title"></h4>
                     <div class="column-div">
-                        <p>No available content at this time.</p>
+                    <form class="form-horizontal" id="reg-form" method = "post" action ="update_image.php" enctype="multipart/form-data">
+                            <table id =status border="2">
+                            </table>
+                    </form>
                     </div>
+                    
+                    <!-- Image/s Upload -->
+                    <h4 class="column-title"></h4>
+                    <div class="column-div">
+                    <form class="form-horizontal" id="reg-form" method = "post" action ="gallery_images.php" enctype="multipart/form-data">
+                            <fieldset>                                          
+                                <!-- File select-->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="imageselect">Upload Image/s</label>
+                                    <div class="col-md-4">                                  
+	                               <input type="file" id="imageselect" name="imageselect[]" multiple/>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="btnUpload"></label>
+                                    <div class="col-md-4">
+                                    <button id="btnUpload" name="btnUpload" class="btn btn-primary" value="Upload Image">Upload</button>                            
+                                    </div>
+                                </div>
+                            </fieldset>                            
+                        </form>
+                    </div>
+                    
+                    
                 </div>
             </div>
-
         </div>
     </section>
 
