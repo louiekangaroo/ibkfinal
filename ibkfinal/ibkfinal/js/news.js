@@ -20,11 +20,11 @@ $(document).ready(function() {
                 success: function(output) {
                     if (output.indexOf("HY000/2002") > -1) {
                       alert('We are having connection issue as of the moment, please try to register later.')
-                      window.location.replace("getinvolved.html#interest");
+                      window.location.replace("news.html");
                       location.reload();
                     } else {
                       alert('Thank you for registering to our newsletter. We will send updates soon!');
-                      window.location.replace("getinvolved.html#interest");
+                      window.location.replace("news.html");
                       location.reload();
                     }
                      $('#btnSubmit').removeAttr('disabled');

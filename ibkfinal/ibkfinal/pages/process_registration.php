@@ -43,9 +43,9 @@ $transport = Swift_SmtpTransport::newInstance('p3plcpnl0389.prod.phx3.secureserv
 // Create the message
 $message = Swift_Message::newInstance();
 //receiver
-$message->setTo('esowelow@gmail.com');
+$message->setTo('louiedbest@gmail.com');
 //sender
-$message->setFrom('louiedbest@gmail.com');
+$message->setFrom('esowelow@gmail.com');
 //subject
 $message->setSubject('Itty Bitty Registration');
 //msg lenght

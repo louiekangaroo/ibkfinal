@@ -30,6 +30,7 @@
     <script type="text/javascript" src="js/jssor.slider.js"></script>
     <script type="text/javascript" src="js/news-slider.js"></script>
     <script type="text/javascript" src="js/news.js"></script>
+    <script type="text/javascript" src="js/newsdetail.js"></script>
     <script type="text/javascript" src="js/ajaxloader.js"></script>
 
 </head>
