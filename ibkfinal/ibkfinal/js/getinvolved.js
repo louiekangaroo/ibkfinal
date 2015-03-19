@@ -34,7 +34,8 @@ $(document).ready(function() {
             $.ajax({ 
                 type: 'post',
                 url: 'process_registration.php',
-                data: { company : compName,
+                data: { 
+                        company : compName,
                         comptype : compType,
                         fname : firstName,
                         lname : lastName,
