@@ -1,9 +1,11 @@
 <?php 
 require("connection.php");
 global $con;
+require_once "MailChimp.php";
+$email = $_POST['txtemail'];
+$fname = "NOT";
+$lname = "AVAILABLE";
 
-
-$email = $_POST['email'];
     $maxsize = 10000000; //set to approx 10 MB
 
     //check associated error code
@@ -28,7 +30,7 @@ $email = $_POST['email'];
                         if(mysqli_num_rows($query) > 0)
                         {
                             echo "Please Log In First";
-                            echo "<script>setTimeout(\"location.href = 'competition.php#register';\",1500);</script>";
+                            echo "<script>setTimeout(\"location.href = 'competitions.html';\",1500);</script>";
                         }
                         else
                         {
@@ -38,7 +40,7 @@ $email = $_POST['email'];
                             $addnews = $con->query($sql);
                             $msg='<p>Image successfully saved in database </p>';
                     
-                            header("Location: competition.php#register"); 
+                   
                         }
                 }
                 else
@@ -83,5 +85,19 @@ function file_upload_error_message($error_code) {
         default:
             return 'Unknown upload error';
     }
+    
+        $MailChimp = new \Drewm\MailChimp('4e63c19b5cdcc2816645336b2b942137-us10');
+    if (isset($email)) {
+        $result = $MailChimp->call('lists/subscribe', array(
+        'id'                => '0c59f094b6',
+        'email'             => array('email'=>$email),
+        'merge_vars'        => array('FNAME'=>$fname, 'LNAME'=>$lname),
+        'double_optin'      => false,
+        'update_existing'   => true,
+        'replace_interests' => false,
+        'send_welcome'      => false,
+        ));
+    }
+
 }
 ?>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -24,7 +24,8 @@
     <script src="../js/jquery.easing.min.js"></script>
     <script src="../js/scrolling-nav.js"></script>
     <script src="../js/jquery.slides.min.js"></script>
-    
+     <script src="../js/compinsert.js"></script>
+    <script src="../js/competitionimages.js"></script>
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -111,9 +112,54 @@
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h4 class="column-title"></h4>
                     <div class="column-div">
-                        <p>No available content at this time.</p>
+                      <form class="form-horizontal" id="reg-form" method = "post" action ="" enctype="multipart/form-data">
+                                
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="txtTitle">Email</label>
+                                    <div class="col-md-4">
+                                        <input id="txtemail" name="txtemail" type="email" class="form-control input-md" required>
+                                       
+                                    </div>
+                                </div>
+
+                
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="fileselect">Upload Photo</label>
+                                    <div class="col-md-4">                                  
+	                               <input type="file" id="fileselect" name="fileselect" required />
+                                    </div>
+                                    
+                                </div>
+                                <!-- Button -->
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label" for="btnSubmit"></label>
+                                    <div class="col-md-4">
+                                        
+                                       <button id="btnSubmit" name="btnSubmit" class="btn btn-primary">Submit</button>    
+                                        
+                                    </div>
+                                </div>
+                        </form>
                     </div>
+                     <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
+        height: 456px; background: #191919; overflow: hidden; margin:10px auto;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div id = "compimage" u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 800px; height: 356px; overflow: hidden;">
+           
+        </div>
                 </div>
+                
             </div>
         </div>
     </section>

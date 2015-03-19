@@ -225,7 +225,10 @@ span
     text-align: justify;
     text-indent: 50px;
 }
-
+.clear
+{
+    clear:both;   
+}
 
 
 
@@ -307,3 +310,4 @@ p {
 	width: 100%;
 	z-index: 10;
 }
+

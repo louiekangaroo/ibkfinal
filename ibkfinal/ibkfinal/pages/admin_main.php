@@ -78,17 +78,7 @@
                     <h4 class="column-title"></h4>
                     <div id = "logs" class="column-div">
     <table id =logs border="1">
-           <thead>
-     <tr>
-      <th>Company Name</th>
-      <th>Full Name</th>
-      <th>Email Address</th>
-      <th>Registration Type</th>
-      <th>Date</th>
-         </thead>
-  <tbody class="list">
-         </tbody>
-                        </table>
+          
                     </div>
                 </div>
             </div>

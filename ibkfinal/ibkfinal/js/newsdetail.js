@@ -2,7 +2,7 @@
 $(function() {
  
     getnewsarticles();
- getphotogallery();
+    getphotogallery();
 });
 
 function getnewsarticles() {
