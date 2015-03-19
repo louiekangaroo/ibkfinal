@@ -84,6 +84,24 @@ img#contactusHeader {
     margin-top: -1%;
 }
 
+.Flexible-container iframe {
+    width: 100%;
+    height: 450px;
+    display: table-cell;
+}
+
+.contact-form {
+    position: relative;
+    width: 25%;
+    padding: 20px;
+    right: -665px;
+    margin-top: -475px;
+}
+
+.contact-form-web {
+    display: none;
+}
+
 
 /*FLOATING BOXDIV LEFT AND RIGHT*/
 #div-left {
@@ -149,8 +167,16 @@ img#contactusHeader {
         height: 100%;
     }
 
-    .about-section {
-        padding-top: 150px;
+    .contact-section {
+        height: 175%;
+    }
+
+    .contact-form {
+        display: none;
+    }
+
+    .contact-form-web {
+        display: block;
     }
 
     /*Footer*/
