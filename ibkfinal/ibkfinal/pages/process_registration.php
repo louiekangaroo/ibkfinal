@@ -6,6 +6,7 @@ global $con;
 
 $compname = $_POST['company'];
 $comptype = $_POST['comptype'];
+$compcat = $_POST['compcat'];
 $fname = $_POST['fname'];
 $lname = $_POST['lname'];
 $jobtitle = $_POST['jobtitle'];
@@ -16,6 +17,7 @@ $regtype = $_POST['regtype'];
 
 $clean_compname = stripslashes($compname);
 $clean_comptype = stripslashes($comptype);
+$clean_compcat = stripslashes($compcat);
 $clean_fname = stripslashes($fname);
 $clean_lname = stripslashes($lname);
 $clean_jobtitle = stripslashes($jobtitle);
@@ -25,7 +27,7 @@ $clean_remarks = stripslashes($remarks);
 $clean_regtype = stripslashes($regtype);
 
 
-     $sql = ("CALL  InsertRegistration('$clean_compname','$clean_comptype','$clean_fname','$clean_lname','$clean_jobtitle','$clean_pnumber','$clean_eadd','$clean_remarks','$clean_regtype')");
+     $sql = ("CALL  InsertRegistration('$clean_compname','$clean_comptype','$clean_compcat','$clean_fname','$clean_lname','$clean_jobtitle','$clean_pnumber','$clean_eadd','$clean_remarks','$clean_regtype')");
 $addregister = $con->query($sql);
 
 	 if($addregister == false)
@@ -53,6 +55,7 @@ $message->setMaxLineLength(10000);
          
 $message->setBody("<b>Company/Organisation Name: </b>".$clean_compname."<br><br>"
 ."<b>Company/Organisation Type: </b>".$clean_comptype."<br><br>"
+."<b>Company/Organisation Type: </b>".$clean_compcat."<br><br>"
 ."<b>First Name: </b>".$clean_fname."<br><br>"	
 ."<b>Last Name: </b>".$clean_lname."<br><br>"  
 ."<b>Job Title: </b>".$clean_jobtitle."<br><br>"

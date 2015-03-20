@@ -28,7 +28,7 @@
     <script  src="../js/jssor.js"></script>
     <script  src="../js/jssor.slider.js"></script>
     <script  src="../js/news-slider.js"></script>
-    <script src="../js/news.js"></script>
+  
     <script src="../js/newsdetail.js"></script>
     <script  src="../js/jquery-1.9.1.min.js"></script>
     <script src="../js/ajaxloader.js"></script>
@@ -121,7 +121,7 @@
                     <h4 class="column-title"></h4>
                     <div class="column-div">
                         <p>Stay up to date with the Itty Bitty Kids Expo, by subscribing to our newsletter.</p>
-                      <form class="form-horizontal" id="reg-form" method="post" action="">
+                      <form class="form-horizontal" id="reg-form" method="post" action="registernewsletter.php">
                             <fieldset>
 
                                 <!-- Form Name -->
@@ -150,7 +150,7 @@
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="btnSubmit"></label>
                                     <div class="col-md-4">
-                                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary">Submit</button>
+                                        <button id="btnSubmit" name="btnSubmit" class="btn btn-primary" onclick = "alert ('Thanks for becoming a friend of Itty Bitty Kids Expo.')">Submit</button>
                                     </div>
                                 </div>
                             </fieldset>
