@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     background: url("../images/index cloud/ibkbackground.jpg") no-repeat;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% auto;
     background-attachment: fixed;
 }
 
@@ -20,7 +20,7 @@ body {
 #sun a img {
     height: 300px;
     margin-top: -150px;
-    margin-left: 20px;
+    margin-left: -220px;
 }
 
 #cloud-about a img {
@@ -28,7 +28,7 @@ body {
     display: inline;
     height: 200px;
     margin-top: -80px;
-    margin-left: -30px;
+    margin-left: -100px;
 }
 
 #cloud-getinvolved a img {
