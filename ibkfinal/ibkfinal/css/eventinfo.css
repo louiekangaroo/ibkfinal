@@ -173,6 +173,20 @@ img#eventinfoHeader {
     width: 20px;   
 }
 
+
+#links {
+	color: #fff;
+    position:absolute; 
+    top:50px;
+    left: 28px;
+}
+
+#links:hover , #links:active, #links:visited, #links:link{
+	text-decoration: none;
+	color: #4d4d4d;
+}
+
+
 /*RESPONSIVENESS CODES OF THE PAGE WILL BE PLACED HERE*/
 @media screen and (max-width: 414px) and (max-height: 736px) {
 

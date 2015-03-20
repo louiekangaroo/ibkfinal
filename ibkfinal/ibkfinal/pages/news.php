@@ -62,7 +62,7 @@
                     <li>
                         <a class="page-scroll" href="index.html">Home</a>
                     </li>
-                    <li>
+                      <li>
                         <a class="page-scroll" href="about.html">About</a>
                     </li>
                     <li>
@@ -73,6 +73,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="competitions.html">Competitions</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="news.php">News</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="contactus.html">Contact Us</a>
@@ -281,12 +284,12 @@
         <h4></h4>
     </div>
 
-    <div id="div-right-one">
-        <h4></h4>
+  <div id="div-right-one">
+        <a class="page-scroll" href="news.php#newsletter"><h4 id="links">Register Newsletter</h4></a>
     </div>
 
-    <div id="div-right-two">
-        <h4></h4>
+   <div id="div-right-two">
+        <h4 id="links">Buy Ticket Online</h4>
     </div>
 
 

@@ -179,7 +179,17 @@ span
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
+#links {
+	color: #fff;
+    position:absolute; 
+    top:50px;
+    left: 28px;
+}
 
+#links:hover , #links:active, #links:visited, #links:link{
+	text-decoration: none;
+	color: #4d4d4d;
+}
 
 
 

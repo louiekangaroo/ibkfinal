@@ -127,6 +127,8 @@ img#aboutHeader {
     width: 200px;
     right: 0;
     margin-right: 5px;
+    text-align: center;
+   
 }
 
 #div-right-two {
@@ -158,6 +160,18 @@ img#aboutHeader {
   transform: scale(0.8);
   -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+#links {
+	color: #fff;
+    position:absolute; 
+    top:50px;
+    left: 28px;
+}
+
+#links:hover , #links:active, #links:visited, #links:link{
+	text-decoration: none;
+	color: #4d4d4d;
 }
 
 

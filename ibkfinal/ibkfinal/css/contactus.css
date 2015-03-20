@@ -98,9 +98,15 @@ img#contactusHeader {
 .contact-form {
     position: relative;
     width: 25%;
-    padding: 20px;
+    height: 450px;
+    padding: 8px;
     right: -665px;
-    margin-top: -475px;
+    margin-top: -450px;
+    
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.2); 
+    
+    
 }
 
 .contact-form-web {
@@ -162,6 +168,17 @@ img#contactusHeader {
   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
+#links {
+	color: #fff;
+    position:absolute; 
+    top:50px;
+    left: 28px;
+}
+
+#links:hover , #links:active, #links:visited, #links:link{
+	text-decoration: none;
+	color: #4d4d4d;
+}
 
 
 
