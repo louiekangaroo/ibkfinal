@@ -34,9 +34,14 @@ body {
     margin-right: 1px;
 }
 
+#ul-menu li:nth-child(8) {
+    background-color: #d277ec;
+    margin-right: 1px;
+}
+
 .navbar-default .navbar-nav > li > a:hover {
     color: #000;
-    background-color: #e2bced;
+    background-color: #f2eb3a;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -117,7 +122,7 @@ img#competitionHeader {
     top: 85px;
     background: url("../images/page floating divs/competition_right_div_one.png") no-repeat;
     background-size: 100%;
-    height: 200px;
+    height: 150px;
     width: 200px;
     right: 0;
     margin-right: 5px;
@@ -126,15 +131,33 @@ img#competitionHeader {
 #div-right-two {
     background-color: #44CCD8;
     position: fixed;
-    top: 255px;
+    top: 220px;
     background: url("../images/page floating divs/competition_right_div_two.png") no-repeat;
     background-size: 100%;
-    height: 200px;
+    height: 150px;
     width: 200px;
     right: 0;
     margin-right: 5px;
 }
 
+#div-right-two, #div-right-one {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+#div-right-two:hover, #div-right-two:focus, #div-right-two:active, #div-right-one:hover, #div-right-one:focus, #div-right-one:active {
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 
 
 
