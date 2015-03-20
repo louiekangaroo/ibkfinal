@@ -20,6 +20,7 @@ $(document).ready(function() {
         $('#btnSubmit').attr('disabled','disabled');
         var compName = $('#company').val();
         var compType = $('#company-type option:selected').text();
+        var compcat = $('#company-cat option:selected').text();
         var firstName = $('#txtFName').val();
         var lastName = $('#txtLName').val();
         var jobTitle = $('#txtJobTitle').val();
@@ -27,6 +28,7 @@ $(document).ready(function() {
         var email = $('#txtEmail').val();
         var comments = $('#txtComments').val();
         var regType = $('input[name="regtype"]:checked').val();
+
 
         var meh = isValidEmailAddress(email);
 
@@ -43,7 +45,8 @@ $(document).ready(function() {
                         pnumber : phoneNumber,
                         eadd : email,
                         remarks : comments,
-                        regtype : regType
+                        regtype : regType,
+                        compcat : compcat
                 },
                 success: function(output) {
                     if (output.indexOf("HY000/2002") > -1) {
