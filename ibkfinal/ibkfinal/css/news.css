@@ -130,7 +130,6 @@ span
 
 /*FLOATING BOXDIV LEFT AND RIGHT*/
 #div-left {
-    visibility: hidden;
     position: fixed;
     top: 85px;
     background: url("../images/page floating divs/news_left_div.png") no-repeat;
@@ -141,7 +140,6 @@ span
 }
 
 #div-right-one {
-    visibility: hidden;
     background-color: #44CCD8;
     position: fixed;
     top: 85px;
@@ -154,7 +152,6 @@ span
 }
 
 #div-right-two {
-    visibility: hidden;
     background-color: #44CCD8;
     position: fixed;
     top: 255px;
