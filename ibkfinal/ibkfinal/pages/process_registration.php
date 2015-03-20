@@ -65,6 +65,38 @@ $message->setBody("<b>Company/Organisation Name: </b>".$clean_compname."<br><br>
 $mailer = Swift_Mailer::newInstance($transport);
 $send = $mailer->send($message);
   
+         
+         
+$transport = Swift_SmtpTransport::newInstance('p3plcpnl0389.prod.phx3.secureserver.net', 465,'ssl')
+      ->setUsername('admin@ittybittykids.com.au')
+      ->setPassword('~1q2w3e4r')
+      ;
+         
+// Create the message
+$message = Swift_Message::newInstance();
+//receive
+$message->setTo($clean_eadd);
+//sender
+$message->setFrom('admin@ittybittykids.com.au');
+//subject
+$message->setSubject('Itty Bitty Registration');
+//msg lenght
+$message->setMaxLineLength(10000);
+         
+$message->setBody("Thanks for expressing your interest in joining the Itty Bitty Kids Expo.<br><br>"
+."We look forward to creating an environment of support, learning and fun with you on <br>"
+."Saturday 28 and Sunday 29 November at the Royal International Convention Centre <br>"
+."located at the Brisbane Showgrounds.<br><br>"
+."We’ll be in touch soon to provide you further information and to answer any questions <br>"
+."you have. <br><br>"
+."Kind regards,<br><br>"    
+."The Itty Bitty Kids Expo Team<br><br><br>"   
+."<i><b>Note:</b> This e-mail is automatically generated. Please do not reply.</i>",'text/html');
+                
+$mailer = Swift_Mailer::newInstance($transport);
+$send = $mailer->send($message);
+         
+         
         if(!$send)
         {
             echo "msg not send";
