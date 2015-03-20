@@ -12,7 +12,7 @@ foreach ($_FILES["imageselect"]["error"] as $key => $error){
     if(isset($_POST["btnUpload"])) {
     $tempname = $_FILES["imageselect"]["tmp_name"][$key];
     $filename = $_FILES["imageselect"]["name"][$key];
-    $targetfile = "/public_ftp/" .  basename($filename);
+    $targetfile = "/public_ftp/PhotoGallery" .  basename($filename);
     $uploadOk = 1;
     $extname = pathinfo($targetfile,PATHINFO_EXTENSION);
         

@@ -24,7 +24,7 @@
     <script src="../js/jquery.easing.min.js"></script>
     <script src="../js/scrolling-nav.js"></script>
     <script src="../js/jquery.slides.min.js"></script>
-    
+   
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -100,41 +100,24 @@
                         <div class="contact-form">
                             <h3>Contact Us!</h3>
 
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            <form id="main-contact-form" name="contact-form" method="post" action="process_contact.php">
                                 <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                    <input type="text" id = "name" name="name" class="form-control" placeholder="Name" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                    <input type="email" id = "email" name="email" class="form-control" placeholder="Email" required>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                                    <input type="text" id = "subject"  name="subject" class="form-control" placeholder="Subject" required>
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
+                                    <textarea name="message" id = "message" class="form-control" rows="8" placeholder="Message" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
+                                <button id="btnSubmit" name="btnSubmit" class="btn btn-primary" onclick ="alert('Thank you for getting in touch with us.')">Send Message</button>
                             </form>
                         </div>
 
-                        <div class="contact-form-web">
-                                <br><br>
-                            <form id="main-contact-form" name="contact-form" method="post" action="#">
-                                <div class="form-group">
-                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" name="subject" class="form-control" placeholder="Subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" rows="8" placeholder="Message" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
+                    
                     <br><br>
                     </div>
                 </div>

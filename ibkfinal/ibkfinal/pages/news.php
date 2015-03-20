@@ -19,7 +19,7 @@
     <link href="../css/gallery.css" rel="stylesheet">
 
 
-    <!--Javascript-->
+ <!--Javascript-->
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery.easing.min.js"></script>
@@ -101,14 +101,13 @@
             <div class="row">
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h4 class="column-title"></h4>
-                    <script src="jquery.min.js" type="text/javascript"></script>
- 
-                    <div id = "newsarticles" class="column-div">
-                      
+                    
+                    <div class="column-div">
+                        <?php include('newsdetails.php') ?>
                     </div>
                 </div>
             </div>
-
+            
         </div>
     </section>
 
@@ -122,7 +121,7 @@
                     <h4 class="column-title"></h4>
                     <div class="column-div">
                         <p>Stay up to date with the Itty Bitty Kids Expo, by subscribing to our newsletter.</p>
-                        <form class="form-horizontal" id="reg-form" method="post" action="">
+                      <form class="form-horizontal" id="reg-form" method="post" action="">
                             <fieldset>
 
                                 <!-- Form Name -->
@@ -130,22 +129,14 @@
 
 
                                 <div class="form-group">
-                                    <label class="col-md-4 control-label" for="txtFName">First Name <span class="error">*</span></label>
+                                    <label class="col-md-4 control-label" for="txtFName">Full Name <span class="error">*</span></label>
                                     <div class="col-md-4">
                                         <input id="txtFName" name="fname" type="text" class="form-control input-md" required>
 
 
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label class="col-md-4 control-label" for="txtLName">Last Name <span class="error">*</span></label>
-                                    <div class="col-md-4">
-                                        <input id="txtLName" name="lname" type="text" class="form-control input-md" required>
-
-
-                                    </div>
-                                </div>
-
+                            
                                 <!-- Email-->
                                 <div class="form-group">
                                     <label class="col-md-4 control-label" for="txtEmail">Email Address<span class="error">* </span></label>

@@ -77,5 +77,7 @@ function file_upload_error_message($error_code) {
         default:
             return 'Unknown upload error';
     }
-}
+    }
+
+
 ?>

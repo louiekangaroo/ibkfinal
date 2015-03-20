@@ -3,28 +3,26 @@ $(document).ready(function() {
     $("#btnSubmit").click(function() {
         $('#btnSubmit').attr('disabled','disabled');
         var firstName = $('#txtFName').val();
-        var lastName = $('#txtLName').val();
         var email = $('#txtEmail').val();
 
         var meh = isValidEmailAddress(email);
 
-        if (!firstName == "" && !lastName == "" && !meh == false ) {
+        if (!firstName == "" && !meh == false ) {
             $.ajax({ 
                 type: 'post',
                 url: 'registernewsletter.php',
                 data: { 
                         eadd : email,
-                        fname : firstName,
-                        lname : lastName
+                        fname : firstName
                 },
                 success: function(output) {
                     if (output.indexOf("HY000/2002") > -1) {
                       alert('We are having connection issue as of the moment, please try to register later.')
-                      window.location.replace("news.html");
+                      window.location.replace("news.php");
                       location.reload();
                     } else {
                       alert('Thank you for registering to our newsletter. We will send updates soon!');
-                      window.location.replace("news.html");
+                      window.location.replace("news.php");
                       location.reload();
                     }
                      $('#btnSubmit').removeAttr('disabled');

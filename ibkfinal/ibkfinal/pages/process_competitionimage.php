@@ -2,69 +2,79 @@
 require("connection.php");
 global $con;
 require_once "MailChimp.php";
-$email = $_POST['txtemail'];
-$fname = "NOT";
-$lname = "AVAILABLE";
 
-    $maxsize = 10000000; //set to approx 10 MB
 
-    //check associated error code
-    if($_FILES['fileselect']['error']==UPLOAD_ERR_OK) {
 
-        //check whether file is uploaded with HTTP POST
-        if(is_uploaded_file($_FILES['fileselect']['tmp_name'])) {    
+    $ftp_server = "ftp.ittybittykids.com.au";
+	$ftp_user = "ibkevent001";
+	$ftp_pass = "Bris@001";
+    $conn_id = ftp_connect($ftp_server) or die("Could not connect to $ftp_server");    
+    $login_result = ftp_login($conn_id, $ftp_user, $ftp_pass); 
 
-            //checks size of uploaded image on server side
-            if( $_FILES['fileselect']['size'] < $maxsize) {  
-  
-               //checks whether uploaded file is of image type
-              //if(strpos(mime_content_type($_FILES['userfile']['tmp_name']),"image")===0) {
-                 $finfo = finfo_open(FILEINFO_MIME_TYPE);
-                if(strpos(finfo_file($finfo, $_FILES['fileselect']['tmp_name']),"image")===0) {    
-
-                    // prepare the image for insertion
-                    $imgData =addslashes (file_get_contents($_FILES['fileselect']['tmp_name']));
-
-                        // validate if exist
-                        $query = mysqli_query($con, "SELECT * FROM competition_info WHERE email='$email'");
-                        if(mysqli_num_rows($query) > 0)
-                        {
-                            echo "Please Log In First";
-                            echo "<script>setTimeout(\"location.href = 'competitions.html';\",1500);</script>";
-                        }
-                        else
-                        {
-                            // our sql query
-                            $sql = ("CALL InsertCompImage('$email','$imgData')");         
-
+foreach ($_FILES["fileselect"]["error"] as $key => $error){
+    if(isset($_POST["btnSubmit"])) {
+    $tempname = $_FILES["fileselect"]["tmp_name"][$key];
+    $filename = $_FILES["fileselect"]["name"][$key];
+    $targetfile = "/public_ftp/Competition" .  basename($filename);
+    $uploadOk = 1;
+    $extname = pathinfo($targetfile,PATHINFO_EXTENSION);
+        
+//    $fp      = fopen($tempname, 'r');
+//    $content = fread($fp, filesize($tempname));
+//    $content = addslashes($content);
+//    fclose($fp);    
+    
+    $check = getimagesize($tempname);
+    if($check !== false) {
+        $uploadOk = 1;
+    } else {
+        $uploadOk = 0;
+    }
+// Check if file already exists
+if (file_exists($targetfile)) {
+    echo "<script>alert('The file " . $filename . " already exists. Please try again. ')</script>";
+    $uploadOk = 0;
+}
+// Check file size
+if ($_FILES["fileselect"]["size"][$key] > 1000000) {
+    echo "<script>alert('The file " . $filename . " is too large.')</script>";
+    $uploadOk = 0;
+}
+// Allow certain file formats
+if($extname != "jpg" && $extname != "png" && $extname != "jpeg"
+&& $extname != "bmp" && $extname != "JPEG" && $extname != "PNG"
+&& $extname != "JPG" && $extname != "BMP"){
+    echo "<script>alert('Sorry, only JPG, JPEG, PNG & BMP files are allowed.')</script>";
+    $uploadOk = 0;
+}
+// Check if $uploadOk is set to 0 by an error
+    if ($uploadOk == 0) {
+       echo "<script>alert('There was an error uploading the file, please try again.')</script>";
+    } else {
+    if ($error == UPLOAD_ERR_OK) {                  
+        
+                    //move_uploaded_file($tempname, $targetfile);
+        
+        if (ftp_put($conn_id, $targetfile, $tempname, FTP_BINARY)) {
+                                                    
+                            
+                            $sql = ("CALL InsertCompImage('".$ftp_server . $targetfile."','$email')");         
                             $addnews = $con->query($sql);
-                            $msg='<p>Image successfully saved in database </p>';
-                    
-                   
-                        }
-                }
-                else
-                    $msg="<p>Uploaded file is not an image.</p>";
-            }
-             else {
-                // if the file is not less than the maximum allowed, print an error
-                $msg='<div>File exceeds the Maximum File limit</div>
-                <div>Maximum File limit is '.$maxsize.' bytes</div>
-                <div>File '.$_FILES['fileselect']['name'].' is '.$_FILES['fileselect']['size'].
-                ' bytes</div><hr />';
-                }
+                            if($addnews == false){                    
+	                           echo"An error has occured".mysqli_error($con);
+                            }else{                                            
+                                                           }
+        } else {
+            echo "There was a problem while uploading $filename\n";
+        }        
+        } else {
+            echo "<script>alert('There was an error uploading the file, please try again.')</script>";
         }
-        else
-            $msg="File not uploaded successfully.";
-
     }
-    else {
-        $msg= file_upload_error_message($_FILES['fileselect']['error']);
-    }
-    echo $msg;
 
-
-// Function to return error message based on error code
+}
+}
+ftp_close($conn_id);
 
 function file_upload_error_message($error_code) {
     switch ($error_code) {
@@ -86,6 +96,9 @@ function file_upload_error_message($error_code) {
             return 'Unknown upload error';
     }
     
+    $email = $_POST['txtemail'];
+    $fname = "NOT";
+    $lname = "AVAILABLE";
         $MailChimp = new \Drewm\MailChimp('4e63c19b5cdcc2816645336b2b942137-us10');
     if (isset($email)) {
         $result = $MailChimp->call('lists/subscribe', array(
