@@ -10,7 +10,9 @@ body {
 /*DESIGN FOR WEB VIEW*/
 
 #cloud-menu {
-    display: inline;
+    display: block;
+    width: 900px;
+    margin: 0 auto;
 }
 
     #cloud-menu div {

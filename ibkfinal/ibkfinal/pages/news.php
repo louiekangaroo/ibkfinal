@@ -280,9 +280,9 @@
 
 
     <!--LEFT AND RIGHT BOXES-->
-    <div id="div-left">
-        <h4></h4>
-    </div>
+    
+  <div id="div-left">
+  </div>
 
   <div id="div-right-one">
         <a class="page-scroll" href="news.php#newsletter"><h4 id="links">Register Newsletter</h4></a>

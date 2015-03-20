@@ -163,16 +163,20 @@ img#aboutHeader {
 }
 
 #links {
+    padding-left: 10px;
+    padding-right: 10px;
 	color: #fff;
     position:absolute; 
     top:50px;
-    left: 28px;
+    left: 15px;
 }
 
 #links:hover , #links:active, #links:visited, #links:link{
 	text-decoration: none;
 	color: #4d4d4d;
+    cursor: pointer;
 }
+
 
 
 

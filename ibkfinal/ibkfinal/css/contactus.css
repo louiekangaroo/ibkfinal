@@ -169,17 +169,19 @@ img#contactusHeader {
 }
 
 #links {
-	color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
     position:absolute; 
     top:50px;
-    left: 28px;
+    left: 15px;
 }
 
 #links:hover , #links:active, #links:visited, #links:link{
-	text-decoration: none;
-	color: #4d4d4d;
+    text-decoration: none;
+    color: #4d4d4d;
+    cursor: pointer;
 }
-
 
 
 /*RESPONSIVENESS CODES OF THE PAGE WILL BE PLACED HERE*/
