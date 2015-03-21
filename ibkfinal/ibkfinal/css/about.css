@@ -177,6 +177,12 @@ img#aboutHeader {
     cursor: pointer;
 }
 
+#div-left article {
+    text-align: center;
+    padding:20px;
+    margin-top: 20px;
+    color: #fff;
+}
 
 
 
