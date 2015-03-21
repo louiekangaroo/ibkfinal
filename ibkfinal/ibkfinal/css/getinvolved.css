@@ -64,7 +64,7 @@ body {
 }
 
 .exhibitor-section {
-    height: 125%;
+    height: 80%;
     overflow: auto;
     padding-top: 150px;
     text-align: center;
@@ -72,7 +72,7 @@ body {
 }
 
 .sponsor-section {
-    height: 125%;
+    height: 65%;
     overflow: auto;
     padding-top: 150px;
     text-align: center;
@@ -80,7 +80,7 @@ body {
 }
 
 .volunteer-section {
-    height: 125%;
+    height: 55%;
     overflow: auto;
     padding-top: 150px;
     text-align: center;
@@ -88,7 +88,7 @@ body {
 }
 
 .interest-section {
-    height: 125%;
+    height: 150%;
     overflow: auto;
     padding-top: 150px;
     text-align: center;
