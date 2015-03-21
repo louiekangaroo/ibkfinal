@@ -96,24 +96,6 @@
         </div>
     </section>
 
-    <!-- NEWS ARTICLES -->
-    <section id="articles" class="articles-section">
-        <div class="container divContainer">
-            <h1>NEWS ARTICLES</h1>
-
-            <div class="row">
-                <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
-                    <h4 class="column-title"></h4>
-                    
-                    <div class="column-div">
-                        <?php include('newsdetails.php') ?>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
     <!-- REGISTER NEWLETTERS -->
     <section id="newsletters" class="newsletters-section">
         <div class="container divContainer">
@@ -161,6 +143,41 @@
                     </div>
                 </div>
             </div>
+    </section>
+
+    <!-- NEWS ARTICLES -->
+    <section id="articles" class="articles-section">
+        <div class="container divContainer">
+            <h1>NEWS ARTICLES</h1>
+
+            <div class="row">
+                <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
+                    <h4 class="column-title"></h4>
+                    
+                    <div class="column-div">
+                        <!--<?php include('newsdetails.php') ?>-->
+                        <p>Coming Soon.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- PRESS KIT -->
+    <section id="presskit" class="presskit-section">
+        <div class="container divContainer">
+            <h1>PRESS KIT</h1>
+
+            <div class="row">
+                <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
+                    <h4 class="column-title"></h4>
+                    <div class="column-div">
+                        <p>Coming Soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- IMAGE GALLERY -->
@@ -216,22 +233,6 @@
         <a style="display: none" href="http://www.jssor.com">Image Slider</a>
     </div>
                     
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PRESS KIT -->
-    <section id="presskit" class="presskit-section">
-        <div class="container divContainer">
-            <h1>PRESS KIT</h1>
-
-            <div class="row">
-                <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
-                    <h4 class="column-title"></h4>
-                    <div class="column-div">
-                        <p>No available content at this time.</p>
-                    </div>
                 </div>
             </div>
         </div>

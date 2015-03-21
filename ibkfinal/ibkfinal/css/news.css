@@ -63,6 +63,14 @@ body {
     background: url("../images/page background/news.jpg");
 }
 
+.newsletters-section {
+    height: 75%;
+    overflow: auto;
+    padding-top: 150px;
+    text-align: center;
+    background: #f2eb3a;
+}
+
 .articles-section {
     height: 125%;
     overflow: auto;
@@ -71,7 +79,7 @@ body {
     background: #f2eb3a;
 }
 
-.newsletters-section {
+.presskit-section {
     height: 125%;
     overflow: auto;
     padding-top: 150px;
@@ -80,14 +88,6 @@ body {
 }
 
 .gallery-section {
-    height: 125%;
-    overflow: auto;
-    padding-top: 150px;
-    text-align: center;
-    background: #f2eb3a;
-}
-
-.presskit-section {
     height: 125%;
     overflow: auto;
     padding-top: 150px;
