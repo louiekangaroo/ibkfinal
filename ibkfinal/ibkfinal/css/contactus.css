@@ -208,11 +208,8 @@ img#contactusHeader {
     }
 
     .contact-form {
-        display: none;
-    }
-
-    .contact-form-web {
         display: block;
+         width: 100%;
     }
 
     /*Footer*/
