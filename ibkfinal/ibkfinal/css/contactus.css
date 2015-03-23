@@ -188,6 +188,14 @@ img#contactusHeader {
     font-size: 13px;
 }
 
+article p {
+    margin: 0;
+}
+
+article a {
+    color: #fff;
+    text-decoration: underline;
+}
 
 /*RESPONSIVENESS CODES OF THE PAGE WILL BE PLACED HERE*/
 @media screen and (max-width: 414px) and (max-height: 736px) {

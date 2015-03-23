@@ -190,6 +190,14 @@ img#aboutHeader {
     font-size: 13px;
 }
 
+article p {
+    margin: 0;
+}
+
+article a {
+    color: #fff;
+    text-decoration: underline;
+}
 
 
 
