@@ -4,7 +4,6 @@
 
 
 .ac-container label{
-	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 	padding: 5px 20px;
 	position: relative;
 	z-index: 20;
@@ -61,8 +60,7 @@
     border-radius: 10px;
 }
 .ac-container article p{
-	font-style: italic;
-	color: #777;
+	color: #000;
 	line-height: 20px;
 	font-size: 17px;
 	padding: 20px;
@@ -93,19 +91,33 @@
 
     /*Hide all the floating divs because it is not necessary on mobile view*/
     .ac-container{
-	width: 310px;
+		width: 100%;
     }
     
     .ac-container label{
-    display: block;
-	height: 110px;
-
-
+    	display: block;
+		height: 110px;
     }
+
     .ac-container input:checked ~ article.ac-small{
-	height: 200px;
+		height: 200px;
     }
+
     .ac-container input:checked ~ article.ac-medium{
-	height: 300px;
-}
+		height: 300px;
+	}
+	
+	.ac-container input:checked ~ article.ac-1liner{
+		height: 100%;
+	}
+	.ac-container input:checked ~ article.ac-2liner{
+		height: 100%;
+	}
+	.ac-container input:checked ~ article.ac-3liner{
+		height: 100%;
+	}
+	.ac-container input:checked ~ article.ac-4liner{
+		height: 100%;
+	}
+
 }
