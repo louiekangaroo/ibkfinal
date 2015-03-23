@@ -3,7 +3,7 @@ body {
     font-weight: 400;
     background: url("../images/index cloud/ibkbackground.jpg") no-repeat;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-attachment: fixed;
 }
 

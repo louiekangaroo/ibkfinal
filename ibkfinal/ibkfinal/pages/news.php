@@ -189,8 +189,8 @@
             <div class="row">
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
                     <h4 class="column-title"></h4>
-                    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 800px;
-        height: 456px; background: #191919; overflow: hidden; margin:10px auto;">
+                    <div id="slider1_container" style="position: relative; top: 0px; left: 0px;
+         background: #191919; overflow: hidden; margin:10px auto;">
 
         <!-- Loading Screen -->
         <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -284,6 +284,19 @@
     <!--LEFT AND RIGHT BOXES-->
     
   <div id="div-left">
+    <article>
+            <p style="font-weight:bold; font-size: 16px">Event Details</p>
+            <p>28 - 29 November 2015</p>
+            <p> Royal International Convention Centre  
+                Bowen Hills, Brisbane, Australia </p>
+                <hr>
+            <p style="font-weight: bold; font-size: 16px">Opening Times</p>
+            <p>Sat 9:30am – 4pm</p>
+            <p>Sun 9:30am – 4pm</p>
+                <hr>
+            <p>Sponsorships and Exhibitor spaces now available for 2015!</p>
+            <p>Don't delay, <a href="getinvolved.html">contact</a> us today</p>
+        </article>
   </div>
 
    <div id="div-right-one">
@@ -311,7 +324,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-6" style="color: darkgray;">
+                <div class="col-sm-6" id="webdevelopers" style="color: darkgray;">
                     Web Design by : Aviso, Manalastas, Llagas, Pablo, Gulmatico
                 </div>
             </div>
