@@ -7,7 +7,8 @@
     <meta name="description" content="Itty Bitty Kids Expo Brisbane Australia">
     <meta name="author" content="Aviso.Manalastas.Llagas.Pablo">
     <title>Contact Us | Itty Bitty Kids Expo</title>
-
+    <link rel="shortcut icon" href="../images/ibkbrowserlogo.ico">
+    
     <!--CSS-->
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/font.css" rel="stylesheet">

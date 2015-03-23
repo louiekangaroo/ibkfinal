@@ -7,6 +7,7 @@
     <meta name="description" content="Itty Bitty Kids Expo Brisbane Australia">
     <meta name="author" content="Aviso.Manalastas.Llagas.Pablo">
     <title>Login | Itty Bitty Kids Expo</title>
+    <link rel="shortcut icon" href="../images/ibkbrowserlogo.ico">
 
     <!--CSS-->
     <link href="../css/font-awesome.min.css" rel="stylesheet">
@@ -70,8 +71,8 @@
             var username = document.getElementById('login-username');
             var password = document.getElementById('login-password');
 
-            if (!username.value == "" && !password.value == "") {
-                if (username.value == "edd" && password.value == "edd") {
+            if (!username.value == "ibkevent001" && !password.value == "Bris@001") {
+                if (username.value == "" && password.value == "edd") {
                     sessionStorage.setItem("isSuccessLogin", "true");
                     location.href = "admin_main.php";
                 } else {
