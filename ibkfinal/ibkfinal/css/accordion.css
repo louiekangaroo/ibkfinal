@@ -1,6 +1,8 @@
 .ac-container{
 	width: 860px;
 }
+
+
 .ac-container label{
 	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
 	padding: 5px 20px;
@@ -18,11 +20,14 @@
 .ac-container label:hover{
 	background: #d9557a;
     color: #fff;
+    border-radius: 10px;
+    
 }
 .ac-container input:checked + label,
 .ac-container input:checked + label:hover{
 	background: #d9557a;
 	color: #fff;
+    border-radius: 10px;
 }
 .ac-container label:hover:after,
 .ac-container input:checked + label:hover:after{
@@ -33,6 +38,7 @@
 	right: 13px;
 	top: 7px;
 	background: transparent url(../images/arrow_down.png) no-repeat center center;	
+    
 }
 .ac-container input:checked + label:hover:after{
 	background-image: url(../images/arrow_up.png);
@@ -52,6 +58,7 @@
 	-o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 	-ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
 	transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    border-radius: 10px;
 }
 .ac-container article p{
 	font-style: italic;
@@ -68,9 +75,37 @@
 	transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 }
-.ac-container input:checked ~ article.ac-small{
+.ac-container input:checked ~ article.ac-1liner{
+	height: 60px;
+}
+.ac-container input:checked ~ article.ac-2liner{
+	height: 80px;
+}
+.ac-container input:checked ~ article.ac-3liner{
 	height: 100px;
 }
-.ac-container input:checked ~ article.ac-medium{
+.ac-container input:checked ~ article.ac-4liner{
 	height: 140px;
+}
+
+/*RESPONSIVENESS CODES OF THE PAGE WILL BE PLACED HERE*/
+@media screen and (max-width: 414px) and (max-height: 736px) {
+
+    /*Hide all the floating divs because it is not necessary on mobile view*/
+    .ac-container{
+	width: 310px;
+    }
+    
+    .ac-container label{
+    display: block;
+	height: 110px;
+
+
+    }
+    .ac-container input:checked ~ article.ac-small{
+	height: 200px;
+    }
+    .ac-container input:checked ~ article.ac-medium{
+	height: 300px;
+}
 }
