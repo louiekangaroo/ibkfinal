@@ -4,6 +4,11 @@ body {
 }
 
 /*NAVIGATION COLOR AND HOVER COLOR*/
+.navbar-default {
+    background-color: #d277ec;
+    border-bottom: 1px solid #000;
+}
+
 #ul-menu li:nth-child(2) {
     background-color: #d277ec;
     margin-right: 1px;
