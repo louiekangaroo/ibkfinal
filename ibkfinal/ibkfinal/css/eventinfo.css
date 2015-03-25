@@ -63,35 +63,31 @@ body {
 
 .intro-section {
      padding-top: 150px;
-    padding-bottom: 150px;
     text-align: center;
     background: url("../images/page background/eventinfo.jpg");
 }
 
 .visinfo-section {
-     padding-top: 150px;
-    padding-bottom: 150px;
+     padding-top: 90px;
     text-align: center;
     background: #9e72f9;
 }
 
 .whatson-section {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 90px;
     text-align: center;
     background: #9e72f9;
 }
 
 .buyticket-section {
-     padding-top: 150px;
-    padding-bottom: 150px;
+     padding-top: 90px;
     text-align: center;
     background: #9e72f9;
 }
 
 .download-section {
-     padding-top: 150px;
-    padding-bottom: 150px;
+     padding-top: 90px;
+    padding-bottom: 90px;
     text-align: center;
     background: #9e72f9;
 }

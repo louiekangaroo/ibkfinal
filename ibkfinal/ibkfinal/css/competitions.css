@@ -63,28 +63,27 @@ body {
 
 .intro-section {
      padding-top: 150px;
-    padding-bottom: 150px;
     text-align: center;
     background: url("../images/page background/competition.jpg");
 }
 
 .competitioninfo-section {
-     padding-top: 150px;
-    padding-bottom: 150px;
+     padding-top: 90px;
+    
+    padding-bottom: 90px;
     text-align: center;
     background: #d277ec;
 }
 
 .register-section {
-     padding-top: 150px;
-    padding-bottom: 150px;
+     padding-top: 90px;
     text-align: center;
     background: #d277ec;
 }
 
 .terms-section {
-     padding-top: 150px;
-    padding-bottom: 150px;
+     padding-top: 90px;
+    padding-bottom: 90px;
     text-align: center;
     background: #d277ec;
 }

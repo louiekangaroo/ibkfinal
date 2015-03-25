@@ -100,7 +100,7 @@
     <!-- REGISTER NEWLETTERS -->
     <section id="newsletters" class="newsletters-section">
         <div class="container divContainer">
-            <h1>REGISTER TO RECEIVE NEWLETTERS</h1>
+            <h1>REGISTER TO RECEIVE NEWSLETTER</h1>
 
             <div class="row">
                 <div class="col-sm-12" style="visibility: visible; margin-bottom: 25px;">
@@ -315,11 +315,11 @@
                 <div class="col-sm-6" id="footer-info">
                     &copy; 2015 Itty Bitty Kids Expo.
                 </div>
-                <div class="col-sm-6" id="social-for-mobile">
+               <div class="col-sm-6" id="social-for-mobile">
                     <ul class="social-icons">
-                        <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.facebook.com/pages/Itty-Bitty-Kids-Expo/1610707759158780?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://instagram.com/ittybittyexpo/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>

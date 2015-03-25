@@ -63,14 +63,13 @@ body {
 
 .intro-section {
      padding-top: 150px;
-    padding-bottom: 150px;
     text-align: center;
     background: url("../images/page background/contactus.jpg");
 }
 
 .contact-section {
-     padding-top: 150px;
-    padding-bottom: 150px;
+     padding-top: 90px;
+    padding-bottom: 90px;
     text-align: center;
     background: #38b0c9;
 }
