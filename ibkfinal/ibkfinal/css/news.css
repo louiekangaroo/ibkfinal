@@ -130,10 +130,11 @@ span
     color: red;
 }
 
-#slider1_container {
-    width: 325px;
-    height: 200px;
-}
+   #slider1_container {
+    width: 100%;
+    height: 500px;
+    }  
+
 
 
 /*FLOATING BOXDIV LEFT AND RIGHT*/
@@ -244,7 +245,15 @@ article a {
         font-size: 8px;
     }
 
-   
+     h1 {
+    font-family: 'Conqueror', sans-serif;
+    font-size: 30px;
+    } 
+
+    #slider1_container {
+    width: 325px;
+    height: 200px;
+    }  
 
     /*Footer*/
     #back-to-top {

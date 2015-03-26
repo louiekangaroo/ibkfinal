@@ -239,8 +239,15 @@ article a {
         font-size: 8px;
     }
 
+    h1 {
+    font-family: 'Conqueror', sans-serif;
+    font-size: 30px;
+    }
+
     /*Footer*/
     #back-to-top {
         float: right;
     }
+
+
 }

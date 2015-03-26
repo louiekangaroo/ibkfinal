@@ -7,3 +7,9 @@
     src: url(../fonts/AWConquerorInline-Regular.otf);
     font-weight: 550;
     }
+
+
+@font-face {
+   font-family: Conqueror
+   src: url(../fonts/AWConquerorInline-Regular.otf);
+}
