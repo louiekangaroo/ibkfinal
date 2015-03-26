@@ -1,4 +1,9 @@
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Regular.ttf);
-}
+    }
+@font-face {
+    font-family: Conqueror;
+    src: url(../fonts/AWConquerorInline-Regular.otf);
+    font-weight: 550;
+    }
