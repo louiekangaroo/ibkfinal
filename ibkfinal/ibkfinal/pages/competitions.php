@@ -526,7 +526,7 @@
                <div class="col-sm-6" id="social-for-mobile">
                     <ul class="social-icons">
                         <li><a href="https://www.facebook.com/pages/Itty-Bitty-Kids-Expo/1610707759158780?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+<!--                        <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>-->
                         <li><a href="https://instagram.com/ittybittyexpo/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
