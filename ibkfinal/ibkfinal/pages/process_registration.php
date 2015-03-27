@@ -62,8 +62,8 @@ $message->setBody("<b>Company/Organisation Name: </b>".$clean_compname."<br><br>
 ."<b>Phone Number: </b>".$clean_pnumber."<br><br>"
 ."<b>Contact Email: </b>".$clean_eadd."<br><br>"
 ."<b>Remarks: </b>".$clean_remarks."<br><br>"
-."<b>Interested in : </b>".$clean_regtype."<br><br><br>"
-."<i><b>Note:</b> This e-mail is automatically generated. Please do not reply.</i>",'text/html');
+."<b>Interested in : </b>".$clean_regtype."<br><br><br><br>"
+."<i><b>Note:</b> This is an automated response. Please do not reply to it.</i>",'text/html');
                 
 $mailer = Swift_Mailer::newInstance($transport);
 $send = $mailer->send($message);
@@ -93,8 +93,8 @@ $message->setBody("Thanks for expressing your interest in joining the Itty Bitty
 ."We’ll be in touch soon to provide you further information and to answer any questions <br>"
 ."you have. <br><br>"
 ."Kind regards,<br><br>"    
-."The Itty Bitty Kids Expo Team<br><br><br>"   
-."<i><b>Note:</b> This e-mail is automatically generated. Please do not reply.</i>",'text/html');
+."The Itty Bitty Kids Expo Team<br><br><br><br>"   
+."<i><b>Note:</b> This is an automated response. Please do not reply to it.</i>",'text/html');
                 
 $mailer = Swift_Mailer::newInstance($transport);
 $send = $mailer->send($message);

@@ -28,8 +28,8 @@ $message->setMaxLineLength(10000);
 $message->setBody("<b>Full Name: </b>".$name."<br><br>"
 ."<b>Contact Email: </b>".$email."<br><br>"
 ."<b>Subject: </b>".$subject."<br><br>"
-."<b>Message: </b>".$msge."<br><br><br>"
-."<i><b>Note:</b> This e-mail is automatically generated. Please do not reply.</i>",'text/html');
+."<b>Message: </b>".$msge."<br><br><br><br>"
+."<i><b>Note:</b> This is an automated response. Please do not reply to it.</i>",'text/html');
                 
 $mailer = Swift_Mailer::newInstance($transport);
 $send = $mailer->send($message);
@@ -55,8 +55,8 @@ $message->setMaxLineLength(10000);
 $message->setBody("Thank you for getting in touch with us.<br><br>"
 ."We’ll be in contact soon to follow up with your inquiry.<br><br>"
 ."Kind regards,<br><br>"
-."The Itty Bitty Kids Expo Team<br><br><br>"
-."<i><b>Note:</b> This e-mail is automatically generated. Please do not reply.</i>",'text/html');
+."The Itty Bitty Kids Expo Team<br><br><br><br>"
+."<i><b>Note:</b> This is an automated response. Please do not reply to it.</i>",'text/html');
                 
 $mailer = Swift_Mailer::newInstance($transport);
 $send = $mailer->send($message);

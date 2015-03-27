@@ -43,7 +43,7 @@ $message->setBody("Thanks for becoming a friend of Itty Bitty Kids Expo.<br><br>
 ."We look forward to meeting you on Saturday 28 and Sunday 29 November at the Royal International Convention Centre located at the Brisbane Showgrounds.<br><br><br>"
 ."Kind regards,<br><br>"
 ."The Itty Bitty Kids Expo Team<br><br><br><br>"
-."<i><b>Note:</b> This is an automated response. Please do not reply.</i>",'text/html');
+."<i><b>Note:</b> This is an automated response. Please do not reply to it.</i>",'text/html');
                 
 $mailer = Swift_Mailer::newInstance($transport);
 $send = $mailer->send($message);
